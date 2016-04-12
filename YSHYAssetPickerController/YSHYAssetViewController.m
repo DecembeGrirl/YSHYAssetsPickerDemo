@@ -249,15 +249,15 @@
         {
             [_indexPathsForSelectedItems addObject:obj];
             obj.selectedImageHidden = NO;
+            [assetCell HandleSelectedImage];
         }
     }
     else
     {
         [_indexPathsForSelectedItems removeObject:obj];
         obj.selectedImageHidden = YES;
+        [assetCell HandleSelectedImage];
     }
-    
-    [assetCell HandleSelectedImage];
     [self setTitleWithSelectedIndexPaths:_indexPathsForSelectedItems];
 }
 
