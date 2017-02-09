@@ -79,7 +79,7 @@
 }
 
 
-#pragma mark - ZYQAssetPickerControllerDelegate
+#pragma mark - YSHYAssetPickerControllerDelegate
 -(void)assetPickerController:(YSHYAssetPickerController *)picker didFinishPickingAssets:(NSArray *)assets
 {
     [dataSource removeAllObjects];
