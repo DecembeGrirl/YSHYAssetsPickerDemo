@@ -6,13 +6,13 @@
 //  Copyright (c) 2015年 CHC. All rights reserved.
 //
 
-#import "EqualSpaceFlowLayout.h"
+#import "YSHYEqualSpaceFlowLayout.h"
 
-@interface EqualSpaceFlowLayout()
+@interface YSHYEqualSpaceFlowLayout()
 @property (nonatomic, strong) NSMutableArray *itemAttributes;
 @end
 
-@implementation EqualSpaceFlowLayout
+@implementation YSHYEqualSpaceFlowLayout
 - (id)init
 {
     if (self = [super init]) {

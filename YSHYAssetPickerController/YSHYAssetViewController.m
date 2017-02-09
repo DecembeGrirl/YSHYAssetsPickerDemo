@@ -8,13 +8,13 @@
 
 #import "YSHYAssetViewController.h"
 #import "YSHYAssetPickerController.h"
-#import "ShowBigViewController.h"
-#import "EqualSpaceFlowLayout.h"
+#import "YSHYShowBigViewController.h"
+#import "YSHYEqualSpaceFlowLayout.h"
 #import "YSHYAssetsCell.h"
 #import "MBProgressHUD.h"
-#import "AssetObj.h"
+#import "YSHYAssetObj.h"
 #define maxSelectedNumber   10;
-@interface YSHYAssetViewController()<UICollectionViewDelegate,UICollectionViewDataSource,EqualSpaceFlowLayoutDelegate,YSHYAssetsCellDelegate>{
+@interface YSHYAssetViewController()<UICollectionViewDelegate,UICollectionViewDataSource,YSHYEqualSpaceFlowLayoutDelegate,YSHYAssetsCellDelegate>{
     BOOL unFirst;
 }
 
@@ -49,6 +49,7 @@
     [self CreatCollectionView];
     [self setupButtons];
     [self.view setBackgroundColor:[UIColor whiteColor]];
+    NSLog(@"%@",_hasSelectedImages);
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -58,13 +59,9 @@
         unFirst=YES;
     }
 }
-#pragma mark - Rotation
-
-
-
 -(void)CreatCollectionView
 {
-    EqualSpaceFlowLayout * flowLayout = [[EqualSpaceFlowLayout alloc]init];
+    YSHYEqualSpaceFlowLayout * flowLayout = [[YSHYEqualSpaceFlowLayout alloc]init];
     flowLayout.delegate = self;
     [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     flowLayout.minimumLineSpacing = 5;
@@ -133,6 +130,11 @@
         else if (self.assets.count > 0)
         {
             [self.collectionView reloadData];
+            NSInteger section = 0;
+            NSInteger item = [self collectionView:self.collectionView numberOfItemsInSection:section] - 1;
+            if (item < 0) item = 0;
+            NSIndexPath *lastIndexPath = [NSIndexPath indexPathForItem:item inSection:section];
+            [self.collectionView scrollToItemAtIndexPath:lastIndexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
         }
     };
     
@@ -155,13 +157,12 @@
 -(void)previewClick
 {
     YSHYAssetPickerController *picker = (YSHYAssetPickerController *)self.navigationController;
-    
-    ShowBigViewController *big = [[ShowBigViewController alloc]init];
+    YSHYShowBigViewController *big = [[YSHYShowBigViewController alloc]init];
     big.arrayOK = [NSMutableArray arrayWithArray:_indexPathsForSelectedItems];
     __weak typeof(picker) weakPicker = picker;
     big.popViewControllerBlock= ^(NSArray * array)
     {
-        for (AssetObj *assetObj in array) {
+        for (YSHYAssetObj *assetObj in array) {
             [_indexPathsForSelectedItems removeObject:assetObj];
             assetObj.selectedImageHidden = YES;
             YSHYAssetsCell * cell =(YSHYAssetsCell *)[_collectionView cellForItemAtIndexPath:assetObj.indexPath];
@@ -180,7 +181,7 @@
     if ([picker.pickerDelegate respondsToSelector:@selector(assetPickerController:didFinishPickingAssets:)])
     {
         NSMutableArray * assets = [[NSMutableArray alloc]initWithCapacity:1];
-        for (AssetObj * obj in _indexPathsForSelectedItems) {
+        for (YSHYAssetObj * obj in _indexPathsForSelectedItems) {
             [assets addObject:obj.asset];
         }
         [picker.pickerDelegate assetPickerController:picker didFinishPickingAssets:assets];
@@ -202,17 +203,30 @@
     static NSString * cellID = @"CellID";
     if([self.assets[indexPath.row] isKindOfClass:[ALAsset class]])
     {
-        AssetObj * obj = [[AssetObj alloc]init];
+        YSHYAssetObj * obj = [[YSHYAssetObj alloc]init];
         obj.asset = self.assets[indexPath.row];
         obj.selectedImageHidden = YES;
         obj.indexPath = indexPath;
         [self.assets replaceObjectAtIndex:indexPath.row withObject:obj];
     }
-    
     YSHYAssetsCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     cell.delegate = self;
     cell.backgroundColor = [UIColor yellowColor];
     [cell ConfigData:_assets[indexPath.row]];
+    YSHYAssetObj * assetObj =_assets[indexPath.row];
+
+    for(int i = 0;i < _hasSelectedImages.count ;i++)
+    {
+        ALAsset * asset = _hasSelectedImages[i];
+//        PHImageManager.asset
+        if([[asset defaultRepresentation].url isEqual:[assetObj.asset defaultRepresentation].url])
+        {
+            [_indexPathsForSelectedItems addObject:assetObj];
+            assetObj.selectedImageHidden = NO;
+            [cell HandleSelectedImage];
+            [self setTitleWithSelectedIndexPaths:_indexPathsForSelectedItems];
+        }
+    }
     [cell layoutIfNeeded];
     return cell;
 }
@@ -232,13 +246,12 @@
     [view removeFromSuperview];
 }
 
-
 -(void)TapAssetsCell:(YSHYAssetsCell *)assetCell isSelectedImageHidden:(BOOL)selected indexPath:(NSIndexPath *)indexPath
 {
-    AssetObj * obj =(AssetObj *)self.assets[indexPath.row];
+    YSHYAssetObj * obj =(YSHYAssetObj *)self.assets[indexPath.row];
     if(selected)
     {
-        if(self.hasSelecteNumber >= 10)
+        if(self.hasSelecteNumber >= self.maxSlectedNumber)
         {
             MBProgressHUD * hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
             hud.mode = MBProgressHUDModeText;
@@ -258,6 +271,7 @@
         obj.selectedImageHidden = YES;
         [assetCell HandleSelectedImage];
     }
+    
     [self setTitleWithSelectedIndexPaths:_indexPathsForSelectedItems];
 }
 

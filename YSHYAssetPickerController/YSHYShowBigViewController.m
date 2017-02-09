@@ -7,7 +7,7 @@
 //
 
 
-#import "ShowBigViewController.h"
+#import "YSHYShowBigViewController.h"
 #import "YSHYZoomScrollView.h"
 #import "YSHYAssetsCell.h"
 #import <AssetsLibrary/AssetsLibrary.h>
@@ -48,7 +48,7 @@
 
 #pragma mark - ShowBigViewController
 
-@interface ShowBigViewController ()
+@interface YSHYShowBigViewController ()
 
 @property(strong, nonatomic) NSMutableArray *imageArray;
 @property(assign, nonatomic) CGPoint currentPoint;
@@ -60,7 +60,7 @@
 
 @end
 
-@implementation ShowBigViewController
+@implementation YSHYShowBigViewController
 
 - (void)viewDidLoad
 {
@@ -95,7 +95,7 @@
         ShowImage *showImage = [[ShowImage alloc]init];
         showImage.delegate = self;
         showImage.theOrder = i;
-        AssetObj * assetObj = self.arrayOK[i];
+        YSHYAssetObj * assetObj = self.arrayOK[i];
          UIImage *tempImg=[UIImage imageWithCGImage:assetObj.asset.defaultRepresentation.fullScreenImage];
         showImage.image= tempImg;
         showImage.stateOfSelect = YES;
@@ -119,7 +119,7 @@
     //点击按钮，回到主发布页面
     _btnOK = [[UIButton alloc]initWithFrame:CGRectMake(kScreenWidth - 50 - 5, kScreenHeight - 64 -30 -5, 50, 30)];
     [_btnOK setBackgroundImage:[UIImage imageNamed:@"complete.png"] forState:UIControlStateNormal];
-    [_btnOK setTitle:[NSString stringWithFormat:@"发送(%d)",self.sendNumber] forState:UIControlStateNormal];
+    [_btnOK setTitle:[NSString stringWithFormat:@"确定(%d)",self.sendNumber] forState:UIControlStateNormal];
     _btnOK .titleLabel.font = [UIFont systemFontOfSize:14.0];
     [_btnOK addTarget:self action:@selector(complete:) forControlEvents:UIControlEventTouchUpInside];
     [self.view insertSubview:_btnOK aboveSubview:_scrollerview];
@@ -199,7 +199,7 @@
     [self.arrayOK removeObjectsInArray:self.removeArray];
     
     NSMutableArray * assets = [[NSMutableArray alloc]initWithCapacity:1];
-    for (AssetObj * obj in self.arrayOK) {
+    for (YSHYAssetObj * obj in self.arrayOK) {
         [assets addObject:obj.asset];
     }
     self.sendImagesBlock(assets);

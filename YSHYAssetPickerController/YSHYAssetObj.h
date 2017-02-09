@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-@interface AssetObj : NSObject
+@interface YSHYAssetObj : NSObject
 
 @property (nonatomic, strong)ALAsset * asset;
 @property (nonatomic, assign)BOOL  selectedImageHidden;

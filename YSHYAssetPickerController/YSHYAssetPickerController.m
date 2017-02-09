@@ -9,18 +9,21 @@
 #import "YSHYAssetPickerController.h"
 #import "YSHYAssetGroupViewController.h"
 @interface YSHYAssetPickerController ()
-
+{
+    YSHYAssetGroupViewController *groupViewController;
+}
 @end
 
 @implementation YSHYAssetPickerController
 
-- (id)init
+- (id)initWithNumber:(NSInteger)maxNumber andHasSelectedImags:(NSMutableArray *)images
 {
-    YSHYAssetGroupViewController *groupViewController = [[YSHYAssetGroupViewController alloc] init];
-    
+    groupViewController = [[YSHYAssetGroupViewController alloc] init];
+     groupViewController.maxSelectedNumber = maxNumber;
+    groupViewController.hasSelectedImages = images;
     if (self = [super initWithRootViewController:groupViewController])
     {
-        _maximumNumberOfSelection      = 10;
+        _maximumNumberOfSelection      = maxNumber;
         _minimumNumberOfSelection      = 0;
         _assetsFilter                  = [ALAssetsFilter allAssets];
         _showCancelButton              = YES;
@@ -42,6 +45,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
 }
 
 - (void)didReceiveMemoryWarning

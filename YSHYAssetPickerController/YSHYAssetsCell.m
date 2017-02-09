@@ -31,11 +31,11 @@
     [self.contentView addSubview:_selectedImageView];
 }
 
--(void)ConfigData:(AssetObj *)assetObj
+-(void)ConfigData:(YSHYAssetObj *)assetObj
 {
     self.asset = assetObj.asset;
     _selectedImageView.hidden = assetObj.selectedImageHidden;
-    UIImage * tempImg = [UIImage imageWithCGImage:[self.asset thumbnail]];
+    UIImage * tempImg = [UIImage imageWithCGImage:[self.asset aspectRatioThumbnail]];
     [_imageView setImage:tempImg];
 }
 

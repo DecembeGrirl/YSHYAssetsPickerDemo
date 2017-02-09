@@ -53,4 +53,10 @@
 
 @property (nonatomic, strong) NSString *typeOfController;
 
+@property (nonatomic, strong) NSMutableArray * selectedImages;
+
+
+
+- (id)initWithNumber:(NSInteger)maxNumber andHasSelectedImags:(NSMutableArray *)images;
+
 @end

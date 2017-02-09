@@ -35,10 +35,9 @@ typedef void(^SendImagesBlock)(NSArray * array);
 @end
 
 #pragma mark - ShowBigViewController
-@interface ShowBigViewController : UIViewController<UIScrollViewDelegate,UINavigationControllerDelegate,NavigationRightButtonDelegate>
+@interface YSHYShowBigViewController : UIViewController<UIScrollViewDelegate,UINavigationControllerDelegate,NavigationRightButtonDelegate>
 {
     UIImageView    *_imagvtitle;
-    
     UIButton        *rightbtn;
     UIScrollView    *_scrollerview;
     UIButton        *_btnOK;

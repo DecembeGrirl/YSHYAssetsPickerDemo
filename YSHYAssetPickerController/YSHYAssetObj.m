@@ -6,8 +6,8 @@
 //  Copyright © 2016年 yangshuyaun. All rights reserved.
 //
 
-#import "AssetObj.h"
+#import "YSHYAssetObj.h"
 
-@implementation AssetObj
+@implementation YSHYAssetObj
 
 @end
