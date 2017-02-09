@@ -24,8 +24,6 @@
         }];
  
 实现其代理方法
-
-#pragma mark - ZYQAssetPickerControllerDelegate
   -(void)assetPickerController:(YSHYAssetPickerController *)picker didFinishPickingAssets:(NSArray *)assets
   {
      
