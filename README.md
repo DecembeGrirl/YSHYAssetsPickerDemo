@@ -30,3 +30,5 @@
      {
       NSLog(@"选好了");
      }
+
+![image](https://github.com/DecembeGrirl/YSHYAssetPickerDemo/blob/master/YSHYAssetPickerDemo/YSHYAssetPicker/YSHYAssetpicker.gif)
