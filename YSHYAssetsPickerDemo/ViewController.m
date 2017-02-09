@@ -82,6 +82,7 @@
 #pragma mark - ZYQAssetPickerControllerDelegate
 -(void)assetPickerController:(YSHYAssetPickerController *)picker didFinishPickingAssets:(NSArray *)assets
 {
+    [dataSource removeAllObjects];
     [dataSource addObjectsFromArray:assets];
     [self CreatImageViewWithImags:dataSource];
 }
