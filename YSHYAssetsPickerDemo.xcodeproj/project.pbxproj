@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E520BA891E4C015400448D0F /* YSHYAssetObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA6A1E4C015400448D0F /* YSHYAssetObj.m */; };
+		E520BA8A1E4C015400448D0F /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA6C1E4C015400448D0F /* 2.png */; };
+		E520BA8B1E4C015400448D0F /* addImage.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA6D1E4C015400448D0F /* addImage.png */; };
+		E520BA8C1E4C015400448D0F /* AssetsPickerChecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA6E1E4C015400448D0F /* AssetsPickerChecked@2x.png */; };
+		E520BA8D1E4C015400448D0F /* AssetsPickerChecked~iOS6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA6F1E4C015400448D0F /* AssetsPickerChecked~iOS6@2x.png */; };
+		E520BA8E1E4C015400448D0F /* AssetsPickerLocked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA701E4C015400448D0F /* AssetsPickerLocked@2x.png */; };
+		E520BA8F1E4C015400448D0F /* AssetsPickerVideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA711E4C015400448D0F /* AssetsPickerVideo@2x.png */; };
+		E520BA901E4C015400448D0F /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA721E4C015400448D0F /* complete.png */; };
+		E520BA911E4C015400448D0F /* defultComplete.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA731E4C015400448D0F /* defultComplete.png */; };
+		E520BA921E4C015400448D0F /* delete-circular.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA741E4C015400448D0F /* delete-circular.png */; };
+		E520BA931E4C015400448D0F /* fanhui.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA751E4C015400448D0F /* fanhui.png */; };
+		E520BA941E4C015400448D0F /* isSeleted.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA761E4C015400448D0F /* isSeleted.png */; };
+		E520BA951E4C015400448D0F /* No.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA771E4C015400448D0F /* No.png */; };
+		E520BA961E4C015400448D0F /* OK.png in Resources */ = {isa = PBXBuildFile; fileRef = E520BA781E4C015400448D0F /* OK.png */; };
+		E520BA971E4C015400448D0F /* YSHYAssetGroupViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA7A1E4C015400448D0F /* YSHYAssetGroupViewCell.m */; };
+		E520BA981E4C015400448D0F /* YSHYAssetGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA7C1E4C015400448D0F /* YSHYAssetGroupViewController.m */; };
+		E520BA991E4C015400448D0F /* YSHYAssetPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA7E1E4C015400448D0F /* YSHYAssetPickerController.m */; };
+		E520BA9A1E4C015400448D0F /* YSHYAssetsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA801E4C015400448D0F /* YSHYAssetsCell.m */; };
+		E520BA9B1E4C015400448D0F /* YSHYAssetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA821E4C015400448D0F /* YSHYAssetViewController.m */; };
+		E520BA9C1E4C015400448D0F /* YSHYEqualSpaceFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA841E4C015400448D0F /* YSHYEqualSpaceFlowLayout.m */; };
+		E520BA9D1E4C015400448D0F /* YSHYShowBigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA861E4C015400448D0F /* YSHYShowBigViewController.m */; };
+		E520BA9E1E4C015400448D0F /* YSHYZoomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E520BA881E4C015400448D0F /* YSHYZoomScrollView.m */; };
+		E520BAA21E4C07B500448D0F /* YSHYAssetpicker.gif in Resources */ = {isa = PBXBuildFile; fileRef = E520BAA11E4C07B500448D0F /* YSHYAssetpicker.gif */; };
+		E5797FB41CB4E9D5001AC9FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5797FB31CB4E9D5001AC9FA /* main.m */; };
+		E5797FB71CB4E9D5001AC9FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5797FB61CB4E9D5001AC9FA /* AppDelegate.m */; };
+		E5797FBA1CB4E9D5001AC9FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5797FB91CB4E9D5001AC9FA /* ViewController.m */; };
+		E5797FBD1CB4E9D5001AC9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5797FBB1CB4E9D5001AC9FA /* Main.storyboard */; };
+		E5797FBF1CB4E9D5001AC9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5797FBE1CB4E9D5001AC9FA /* Assets.xcassets */; };
+		E5797FC21CB4E9D5001AC9FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5797FC01CB4E9D5001AC9FA /* LaunchScreen.storyboard */; };
+		E5797FCD1CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5797FCC1CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.m */; };
+		E5797FD81CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E5797FD71CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.m */; };
+		E579801F1CB4ED7A001AC9FA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E579801E1CB4ED7A001AC9FA /* MBProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E5797FC91CB4E9D5001AC9FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5797FA71CB4E9D5001AC9FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5797FAE1CB4E9D5001AC9FA;
+			remoteInfo = YSHYAssetsPickerDemo;
+		};
+		E5797FD41CB4E9D5001AC9FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E5797FA71CB4E9D5001AC9FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5797FAE1CB4E9D5001AC9FA;
+			remoteInfo = YSHYAssetsPickerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E520BA691E4C015400448D0F /* YSHYAssetObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYAssetObj.h; sourceTree = "<group>"; };
+		E520BA6A1E4C015400448D0F /* YSHYAssetObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetObj.m; sourceTree = "<group>"; };
+		E520BA6C1E4C015400448D0F /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		E520BA6D1E4C015400448D0F /* addImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addImage.png; sourceTree = "<group>"; };
+		E520BA6E1E4C015400448D0F /* AssetsPickerChecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AssetsPickerChecked@2x.png"; sourceTree = "<group>"; };
+		E520BA6F1E4C015400448D0F /* AssetsPickerChecked~iOS6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AssetsPickerChecked~iOS6@2x.png"; sourceTree = "<group>"; };
+		E520BA701E4C015400448D0F /* AssetsPickerLocked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AssetsPickerLocked@2x.png"; sourceTree = "<group>"; };
+		E520BA711E4C015400448D0F /* AssetsPickerVideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AssetsPickerVideo@2x.png"; sourceTree = "<group>"; };
+		E520BA721E4C015400448D0F /* complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = complete.png; sourceTree = "<group>"; };
+		E520BA731E4C015400448D0F /* defultComplete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defultComplete.png; sourceTree = "<group>"; };
+		E520BA741E4C015400448D0F /* delete-circular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete-circular.png"; sourceTree = "<group>"; };
+		E520BA751E4C015400448D0F /* fanhui.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanhui.png; sourceTree = "<group>"; };
+		E520BA761E4C015400448D0F /* isSeleted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isSeleted.png; sourceTree = "<group>"; };
+		E520BA771E4C015400448D0F /* No.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = No.png; sourceTree = "<group>"; };
+		E520BA781E4C015400448D0F /* OK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OK.png; sourceTree = "<group>"; };
+		E520BA791E4C015400448D0F /* YSHYAssetGroupViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYAssetGroupViewCell.h; sourceTree = "<group>"; };
+		E520BA7A1E4C015400448D0F /* YSHYAssetGroupViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetGroupViewCell.m; sourceTree = "<group>"; };
+		E520BA7B1E4C015400448D0F /* YSHYAssetGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYAssetGroupViewController.h; sourceTree = "<group>"; };
+		E520BA7C1E4C015400448D0F /* YSHYAssetGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetGroupViewController.m; sourceTree = "<group>"; };
+		E520BA7D1E4C015400448D0F /* YSHYAssetPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYAssetPickerController.h; sourceTree = "<group>"; };
+		E520BA7E1E4C015400448D0F /* YSHYAssetPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetPickerController.m; sourceTree = "<group>"; };
+		E520BA7F1E4C015400448D0F /* YSHYAssetsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYAssetsCell.h; sourceTree = "<group>"; };
+		E520BA801E4C015400448D0F /* YSHYAssetsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetsCell.m; sourceTree = "<group>"; };
+		E520BA811E4C015400448D0F /* YSHYAssetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYAssetViewController.h; sourceTree = "<group>"; };
+		E520BA821E4C015400448D0F /* YSHYAssetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetViewController.m; sourceTree = "<group>"; };
+		E520BA831E4C015400448D0F /* YSHYEqualSpaceFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYEqualSpaceFlowLayout.h; sourceTree = "<group>"; };
+		E520BA841E4C015400448D0F /* YSHYEqualSpaceFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYEqualSpaceFlowLayout.m; sourceTree = "<group>"; };
+		E520BA851E4C015400448D0F /* YSHYShowBigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYShowBigViewController.h; sourceTree = "<group>"; };
+		E520BA861E4C015400448D0F /* YSHYShowBigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYShowBigViewController.m; sourceTree = "<group>"; };
+		E520BA871E4C015400448D0F /* YSHYZoomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSHYZoomScrollView.h; sourceTree = "<group>"; };
+		E520BA881E4C015400448D0F /* YSHYZoomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSHYZoomScrollView.m; sourceTree = "<group>"; };
+		E520BAA11E4C07B500448D0F /* YSHYAssetpicker.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YSHYAssetpicker.gif; sourceTree = "<group>"; };
+		E5797FAF1CB4E9D5001AC9FA /* YSHYAssetsPickerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YSHYAssetsPickerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5797FB31CB4E9D5001AC9FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5797FB51CB4E9D5001AC9FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5797FB61CB4E9D5001AC9FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5797FB81CB4E9D5001AC9FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E5797FB91CB4E9D5001AC9FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E5797FBC1CB4E9D5001AC9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5797FBE1CB4E9D5001AC9FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E5797FC11CB4E9D5001AC9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E5797FC31CB4E9D5001AC9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5797FC81CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSHYAssetsPickerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5797FCC1CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetsPickerDemoTests.m; sourceTree = "<group>"; };
+		E5797FCE1CB4E9D5001AC9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5797FD31CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSHYAssetsPickerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5797FD71CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSHYAssetsPickerDemoUITests.m; sourceTree = "<group>"; };
+		E5797FD91CB4E9D5001AC9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E579801D1CB4ED7A001AC9FA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E579801E1CB4ED7A001AC9FA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5797FAC1CB4E9D5001AC9FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5797FC51CB4E9D5001AC9FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5797FD01CB4E9D5001AC9FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E520BA681E4C015400448D0F /* YSHYAssetPickerController */ = {
+			isa = PBXGroup;
+			children = (
+				E520BA691E4C015400448D0F /* YSHYAssetObj.h */,
+				E520BA6A1E4C015400448D0F /* YSHYAssetObj.m */,
+				E520BA6B1E4C015400448D0F /* Images */,
+				E520BA791E4C015400448D0F /* YSHYAssetGroupViewCell.h */,
+				E520BA7A1E4C015400448D0F /* YSHYAssetGroupViewCell.m */,
+				E520BA7B1E4C015400448D0F /* YSHYAssetGroupViewController.h */,
+				E520BA7C1E4C015400448D0F /* YSHYAssetGroupViewController.m */,
+				E520BA7D1E4C015400448D0F /* YSHYAssetPickerController.h */,
+				E520BA7E1E4C015400448D0F /* YSHYAssetPickerController.m */,
+				E520BA7F1E4C015400448D0F /* YSHYAssetsCell.h */,
+				E520BA801E4C015400448D0F /* YSHYAssetsCell.m */,
+				E520BA811E4C015400448D0F /* YSHYAssetViewController.h */,
+				E520BA821E4C015400448D0F /* YSHYAssetViewController.m */,
+				E520BA831E4C015400448D0F /* YSHYEqualSpaceFlowLayout.h */,
+				E520BA841E4C015400448D0F /* YSHYEqualSpaceFlowLayout.m */,
+				E520BA851E4C015400448D0F /* YSHYShowBigViewController.h */,
+				E520BA861E4C015400448D0F /* YSHYShowBigViewController.m */,
+				E520BA871E4C015400448D0F /* YSHYZoomScrollView.h */,
+				E520BA881E4C015400448D0F /* YSHYZoomScrollView.m */,
+			);
+			path = YSHYAssetPickerController;
+			sourceTree = "<group>";
+		};
+		E520BA6B1E4C015400448D0F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E520BA6C1E4C015400448D0F /* 2.png */,
+				E520BA6D1E4C015400448D0F /* addImage.png */,
+				E520BA6E1E4C015400448D0F /* AssetsPickerChecked@2x.png */,
+				E520BA6F1E4C015400448D0F /* AssetsPickerChecked~iOS6@2x.png */,
+				E520BA701E4C015400448D0F /* AssetsPickerLocked@2x.png */,
+				E520BA711E4C015400448D0F /* AssetsPickerVideo@2x.png */,
+				E520BA721E4C015400448D0F /* complete.png */,
+				E520BA731E4C015400448D0F /* defultComplete.png */,
+				E520BA741E4C015400448D0F /* delete-circular.png */,
+				E520BA751E4C015400448D0F /* fanhui.png */,
+				E520BA761E4C015400448D0F /* isSeleted.png */,
+				E520BA771E4C015400448D0F /* No.png */,
+				E520BA781E4C015400448D0F /* OK.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E5797FA61CB4E9D5001AC9FA = {
+			isa = PBXGroup;
+			children = (
+				E5797FB11CB4E9D5001AC9FA /* YSHYAssetsPickerDemo */,
+				E5797FCB1CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests */,
+				E5797FD61CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests */,
+				E5797FB01CB4E9D5001AC9FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5797FB01CB4E9D5001AC9FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5797FAF1CB4E9D5001AC9FA /* YSHYAssetsPickerDemo.app */,
+				E5797FC81CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.xctest */,
+				E5797FD31CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5797FB11CB4E9D5001AC9FA /* YSHYAssetsPickerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E520BAA11E4C07B500448D0F /* YSHYAssetpicker.gif */,
+				E520BA681E4C015400448D0F /* YSHYAssetPickerController */,
+				E579801C1CB4ED7A001AC9FA /* MBProgressHUD */,
+				E5797FB51CB4E9D5001AC9FA /* AppDelegate.h */,
+				E5797FB61CB4E9D5001AC9FA /* AppDelegate.m */,
+				E5797FB81CB4E9D5001AC9FA /* ViewController.h */,
+				E5797FB91CB4E9D5001AC9FA /* ViewController.m */,
+				E5797FBB1CB4E9D5001AC9FA /* Main.storyboard */,
+				E5797FBE1CB4E9D5001AC9FA /* Assets.xcassets */,
+				E5797FC01CB4E9D5001AC9FA /* LaunchScreen.storyboard */,
+				E5797FC31CB4E9D5001AC9FA /* Info.plist */,
+				E5797FB21CB4E9D5001AC9FA /* Supporting Files */,
+			);
+			path = YSHYAssetsPickerDemo;
+			sourceTree = "<group>";
+		};
+		E5797FB21CB4E9D5001AC9FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5797FB31CB4E9D5001AC9FA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5797FCB1CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E5797FCC1CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.m */,
+				E5797FCE1CB4E9D5001AC9FA /* Info.plist */,
+			);
+			path = YSHYAssetsPickerDemoTests;
+			sourceTree = "<group>";
+		};
+		E5797FD61CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E5797FD71CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.m */,
+				E5797FD91CB4E9D5001AC9FA /* Info.plist */,
+			);
+			path = YSHYAssetsPickerDemoUITests;
+			sourceTree = "<group>";
+		};
+		E579801C1CB4ED7A001AC9FA /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E579801D1CB4ED7A001AC9FA /* MBProgressHUD.h */,
+				E579801E1CB4ED7A001AC9FA /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5797FAE1CB4E9D5001AC9FA /* YSHYAssetsPickerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5797FDC1CB4E9D5001AC9FA /* Build configuration list for PBXNativeTarget "YSHYAssetsPickerDemo" */;
+			buildPhases = (
+				E5797FAB1CB4E9D5001AC9FA /* Sources */,
+				E5797FAC1CB4E9D5001AC9FA /* Frameworks */,
+				E5797FAD1CB4E9D5001AC9FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YSHYAssetsPickerDemo;
+			productName = YSHYAssetsPickerDemo;
+			productReference = E5797FAF1CB4E9D5001AC9FA /* YSHYAssetsPickerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E5797FC71CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5797FDF1CB4E9D5001AC9FA /* Build configuration list for PBXNativeTarget "YSHYAssetsPickerDemoTests" */;
+			buildPhases = (
+				E5797FC41CB4E9D5001AC9FA /* Sources */,
+				E5797FC51CB4E9D5001AC9FA /* Frameworks */,
+				E5797FC61CB4E9D5001AC9FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5797FCA1CB4E9D5001AC9FA /* PBXTargetDependency */,
+			);
+			name = YSHYAssetsPickerDemoTests;
+			productName = YSHYAssetsPickerDemoTests;
+			productReference = E5797FC81CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E5797FD21CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5797FE21CB4E9D5001AC9FA /* Build configuration list for PBXNativeTarget "YSHYAssetsPickerDemoUITests" */;
+			buildPhases = (
+				E5797FCF1CB4E9D5001AC9FA /* Sources */,
+				E5797FD01CB4E9D5001AC9FA /* Frameworks */,
+				E5797FD11CB4E9D5001AC9FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E5797FD51CB4E9D5001AC9FA /* PBXTargetDependency */,
+			);
+			name = YSHYAssetsPickerDemoUITests;
+			productName = YSHYAssetsPickerDemoUITests;
+			productReference = E5797FD31CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5797FA71CB4E9D5001AC9FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = yangshuyaun;
+				TargetAttributes = {
+					E5797FAE1CB4E9D5001AC9FA = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = CV6BXNLMXG;
+					};
+					E5797FC71CB4E9D5001AC9FA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E5797FAE1CB4E9D5001AC9FA;
+					};
+					E5797FD21CB4E9D5001AC9FA = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = E5797FAE1CB4E9D5001AC9FA;
+					};
+				};
+			};
+			buildConfigurationList = E5797FAA1CB4E9D5001AC9FA /* Build configuration list for PBXProject "YSHYAssetsPickerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5797FA61CB4E9D5001AC9FA;
+			productRefGroup = E5797FB01CB4E9D5001AC9FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5797FAE1CB4E9D5001AC9FA /* YSHYAssetsPickerDemo */,
+				E5797FC71CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests */,
+				E5797FD21CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5797FAD1CB4E9D5001AC9FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E520BA8D1E4C015400448D0F /* AssetsPickerChecked~iOS6@2x.png in Resources */,
+				E520BA8E1E4C015400448D0F /* AssetsPickerLocked@2x.png in Resources */,
+				E520BA941E4C015400448D0F /* isSeleted.png in Resources */,
+				E520BA961E4C015400448D0F /* OK.png in Resources */,
+				E520BA911E4C015400448D0F /* defultComplete.png in Resources */,
+				E5797FC21CB4E9D5001AC9FA /* LaunchScreen.storyboard in Resources */,
+				E520BA8C1E4C015400448D0F /* AssetsPickerChecked@2x.png in Resources */,
+				E5797FBF1CB4E9D5001AC9FA /* Assets.xcassets in Resources */,
+				E520BA8F1E4C015400448D0F /* AssetsPickerVideo@2x.png in Resources */,
+				E520BA921E4C015400448D0F /* delete-circular.png in Resources */,
+				E520BA931E4C015400448D0F /* fanhui.png in Resources */,
+				E520BAA21E4C07B500448D0F /* YSHYAssetpicker.gif in Resources */,
+				E520BA951E4C015400448D0F /* No.png in Resources */,
+				E520BA901E4C015400448D0F /* complete.png in Resources */,
+				E520BA8A1E4C015400448D0F /* 2.png in Resources */,
+				E520BA8B1E4C015400448D0F /* addImage.png in Resources */,
+				E5797FBD1CB4E9D5001AC9FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5797FC61CB4E9D5001AC9FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5797FD11CB4E9D5001AC9FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5797FAB1CB4E9D5001AC9FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E520BA971E4C015400448D0F /* YSHYAssetGroupViewCell.m in Sources */,
+				E520BA9D1E4C015400448D0F /* YSHYShowBigViewController.m in Sources */,
+				E520BA9E1E4C015400448D0F /* YSHYZoomScrollView.m in Sources */,
+				E5797FBA1CB4E9D5001AC9FA /* ViewController.m in Sources */,
+				E520BA981E4C015400448D0F /* YSHYAssetGroupViewController.m in Sources */,
+				E520BA9C1E4C015400448D0F /* YSHYEqualSpaceFlowLayout.m in Sources */,
+				E520BA9A1E4C015400448D0F /* YSHYAssetsCell.m in Sources */,
+				E5797FB71CB4E9D5001AC9FA /* AppDelegate.m in Sources */,
+				E579801F1CB4ED7A001AC9FA /* MBProgressHUD.m in Sources */,
+				E520BA991E4C015400448D0F /* YSHYAssetPickerController.m in Sources */,
+				E520BA891E4C015400448D0F /* YSHYAssetObj.m in Sources */,
+				E520BA9B1E4C015400448D0F /* YSHYAssetViewController.m in Sources */,
+				E5797FB41CB4E9D5001AC9FA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5797FC41CB4E9D5001AC9FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5797FCD1CB4E9D5001AC9FA /* YSHYAssetsPickerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5797FCF1CB4E9D5001AC9FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5797FD81CB4E9D5001AC9FA /* YSHYAssetsPickerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E5797FCA1CB4E9D5001AC9FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5797FAE1CB4E9D5001AC9FA /* YSHYAssetsPickerDemo */;
+			targetProxy = E5797FC91CB4E9D5001AC9FA /* PBXContainerItemProxy */;
+		};
+		E5797FD51CB4E9D5001AC9FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E5797FAE1CB4E9D5001AC9FA /* YSHYAssetsPickerDemo */;
+			targetProxy = E5797FD41CB4E9D5001AC9FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E5797FBB1CB4E9D5001AC9FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5797FBC1CB4E9D5001AC9FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5797FC01CB4E9D5001AC9FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5797FC11CB4E9D5001AC9FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5797FDA1CB4E9D5001AC9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5797FDB1CB4E9D5001AC9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5797FDD1CB4E9D5001AC9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = YSHYAssetsPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemo.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5797FDE1CB4E9D5001AC9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = YSHYAssetsPickerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemo.cn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E5797FE01CB4E9D5001AC9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YSHYAssetsPickerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSHYAssetsPickerDemo.app/YSHYAssetsPickerDemo";
+			};
+			name = Debug;
+		};
+		E5797FE11CB4E9D5001AC9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YSHYAssetsPickerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YSHYAssetsPickerDemo.app/YSHYAssetsPickerDemo";
+			};
+			name = Release;
+		};
+		E5797FE31CB4E9D5001AC9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YSHYAssetsPickerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YSHYAssetsPickerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E5797FE41CB4E9D5001AC9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YSHYAssetsPickerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YSHYAssetsPickerDemo;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5797FAA1CB4E9D5001AC9FA /* Build configuration list for PBXProject "YSHYAssetsPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5797FDA1CB4E9D5001AC9FA /* Debug */,
+				E5797FDB1CB4E9D5001AC9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5797FDC1CB4E9D5001AC9FA /* Build configuration list for PBXNativeTarget "YSHYAssetsPickerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5797FDD1CB4E9D5001AC9FA /* Debug */,
+				E5797FDE1CB4E9D5001AC9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5797FDF1CB4E9D5001AC9FA /* Build configuration list for PBXNativeTarget "YSHYAssetsPickerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5797FE01CB4E9D5001AC9FA /* Debug */,
+				E5797FE11CB4E9D5001AC9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5797FE21CB4E9D5001AC9FA /* Build configuration list for PBXNativeTarget "YSHYAssetsPickerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5797FE31CB4E9D5001AC9FA /* Debug */,
+				E5797FE41CB4E9D5001AC9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5797FA71CB4E9D5001AC9FA /* Project object */;
+}
