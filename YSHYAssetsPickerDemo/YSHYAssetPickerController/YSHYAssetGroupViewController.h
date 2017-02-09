@@ -17,4 +17,7 @@
 @property (nonatomic, assign) NSInteger  isFirstAppear;   // 0 表示是  其他表示不是
 @property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
 @property (nonatomic, strong) NSMutableArray *groups;
+
+@property (nonatomic, assign) NSInteger maxSelectedNumber;
+@property (nonatomic, strong) NSMutableArray * hasSelectedImages;
 @end

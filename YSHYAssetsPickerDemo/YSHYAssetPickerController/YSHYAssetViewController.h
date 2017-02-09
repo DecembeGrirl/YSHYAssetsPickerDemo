@@ -15,5 +15,7 @@
 @property (nonatomic, strong) NSMutableArray *SelectedaAssetView;
 @property (nonatomic, strong) ALAssetsGroup *assetsGroup;
 @property (nonatomic, strong) NSMutableArray *indexPathsForSelectedItems;
+@property (nonatomic, strong) NSMutableArray * hasSelectedImages;
+
 @property (nonatomic, strong) UITableView *tableView;
 @end

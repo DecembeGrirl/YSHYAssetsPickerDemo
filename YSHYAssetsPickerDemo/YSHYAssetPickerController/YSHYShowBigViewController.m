@@ -7,12 +7,12 @@
 //
 
 
-#import "ShowBigViewController.h"
+#import "YSHYShowBigViewController.h"
 #import "YSHYZoomScrollView.h"
 #import "YSHYAssetsCell.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #define IOS7LATER  [[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0
-@implementation YSHYShowImage
+@implementation ShowImage
 
 -(id)init
 {
@@ -48,7 +48,7 @@
 
 #pragma mark - ShowBigViewController
 
-@interface ShowBigViewController ()
+@interface YSHYShowBigViewController ()
 
 @property(strong, nonatomic) NSMutableArray *imageArray;
 @property(assign, nonatomic) CGPoint currentPoint;
@@ -60,7 +60,7 @@
 
 @end
 
-@implementation ShowBigViewController
+@implementation YSHYShowBigViewController
 
 - (void)viewDidLoad
 {
@@ -92,16 +92,16 @@
 -(void)initData
 {
     for (int i = 0; i < self.arrayOK.count; i ++) {
-        YSHYShowImage *showImage = [[YSHYShowImage alloc]init];
+        ShowImage *showImage = [[ShowImage alloc]init];
         showImage.delegate = self;
         showImage.theOrder = i;
-        AssetObj * assetObj = self.arrayOK[i];
+        YSHYAssetObj * assetObj = self.arrayOK[i];
          UIImage *tempImg=[UIImage imageWithCGImage:assetObj.asset.defaultRepresentation.fullScreenImage];
         showImage.image= tempImg;
         showImage.stateOfSelect = YES;
         [self.showImageArrary addObject:showImage];
     }
-    YSHYShowImage *showimage = self.showImageArrary[0];
+    ShowImage *showimage = self.showImageArrary[0];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:showimage.button];
 }
 
@@ -119,7 +119,7 @@
     //点击按钮，回到主发布页面
     _btnOK = [[UIButton alloc]initWithFrame:CGRectMake(kScreenWidth - 50 - 5, kScreenHeight - 64 -30 -5, 50, 30)];
     [_btnOK setBackgroundImage:[UIImage imageNamed:@"complete.png"] forState:UIControlStateNormal];
-    [_btnOK setTitle:[NSString stringWithFormat:@"发送(%d)",self.sendNumber] forState:UIControlStateNormal];
+    [_btnOK setTitle:[NSString stringWithFormat:@"确定(%d)",self.sendNumber] forState:UIControlStateNormal];
     _btnOK .titleLabel.font = [UIFont systemFontOfSize:14.0];
     [_btnOK addTarget:self action:@selector(complete:) forControlEvents:UIControlEventTouchUpInside];
     [self.view insertSubview:_btnOK aboveSubview:_scrollerview];
@@ -135,7 +135,7 @@
     //显示选中的图片的大图
     for (int i=0; i<[self.showImageArrary count]; i++)
     {
-        YSHYShowImage *showImage = self.showImageArrary[i];
+        ShowImage *showImage = self.showImageArrary[i];
         YSHYZoomScrollView *zoomScrollView = [[YSHYZoomScrollView alloc]init];
         CGRect frame = _scrollerview.frame;
         frame.origin.x = frame.size.width * i;
@@ -179,7 +179,7 @@
     if( b > 0)
     {
         self.title =[ NSString stringWithFormat:@"%d/%lu",b,(unsigned long)self.showImageArrary.count];
-        YSHYShowImage * showImage = self.showImageArrary[b-1];
+        ShowImage * showImage = self.showImageArrary[b-1];
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:showImage.button];
     }
     self.lastZoomScrollView = self.currentZoomScrollView;
@@ -199,7 +199,7 @@
     [self.arrayOK removeObjectsInArray:self.removeArray];
     
     NSMutableArray * assets = [[NSMutableArray alloc]initWithCapacity:1];
-    for (AssetObj * obj in self.arrayOK) {
+    for (YSHYAssetObj * obj in self.arrayOK) {
         [assets addObject:obj.asset];
     }
     self.sendImagesBlock(assets);
@@ -210,12 +210,12 @@
 
 
 
--(void)navigationRightButtonClicked:(YSHYShowImage *)showImage
+-(void)navigationRightButtonClicked:(ShowImage *)showImage
 {
     [self ChangeSendNumberWithCurrentState:showImage];
 }
 
--(void)ChangeSendNumberWithCurrentState:(YSHYShowImage *)showImage
+-(void)ChangeSendNumberWithCurrentState:(ShowImage *)showImage
 {
     YSHYAssetsCell * assetCell =(YSHYAssetsCell*)self.arrayOK[_currentIndex];
     

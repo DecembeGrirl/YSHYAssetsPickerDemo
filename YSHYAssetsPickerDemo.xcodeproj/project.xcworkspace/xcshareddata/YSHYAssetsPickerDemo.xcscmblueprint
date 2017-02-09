@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "735FA0FE-B068-4F14-BB2A-A9E5179C30A4",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "295C32945DB5D21B6BC9E36D789113ADD6213C07" : "YSHYAssetsPickerDemo\/YSHYAssetsPickerDemo\/",
+    "295C32945DB5D21B6BC9E36D789113ADD6213C07" : "YSHYAssetsPickerDemo\/",
     "FCD54598F2DE33EDA2029B858141B3A6177B34CE" : "YSHYAssetsPickerDemo\/YSHYAssetsPickerDemo\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "YSHYAssetsPickerDemo",
@@ -20,6 +20,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DecembeGrirl\/YSHYAssetsPickerDemo.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "295C32945DB5D21B6BC9E36D789113ADD6213C07"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DecembeGrirl\/YSHYAssetsPickerDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FCD54598F2DE33EDA2029B858141B3A6177B34CE"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DecembeGrirl\/YSHYAssetsPickerDemo.git",

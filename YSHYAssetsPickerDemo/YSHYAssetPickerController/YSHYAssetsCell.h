@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "AssetObj.h"
+#import "YSHYAssetObj.h"
 #define kScreenWidth      [[UIScreen mainScreen]bounds].size.width
 #define kScreenHeight     [[UIScreen mainScreen]bounds].size.height
 #define kCollectionViewSize CGSizeMake(kScreenWidth/4 -4,kScreenWidth/4 -4)

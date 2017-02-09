@@ -276,6 +276,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     YSHYAssetViewController *vc = [[YSHYAssetViewController alloc] init];
+    vc.hasSelectedImages = _hasSelectedImages;
+    vc.maxSlectedNumber = _maxSelectedNumber;
     vc.assetsGroup = [self.groups objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }

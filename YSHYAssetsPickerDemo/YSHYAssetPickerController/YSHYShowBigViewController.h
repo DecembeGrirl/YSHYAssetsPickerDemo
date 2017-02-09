@@ -8,14 +8,14 @@
 
 
 #import <UIKit/UIKit.h>
-@class YSHYShowImage;
+@class ShowImage;
 
 typedef void(^PopViewControllerBlock)(NSArray * array);
 typedef void(^SendImagesBlock)(NSArray * array);
 
 @protocol NavigationRightButtonDelegate <NSObject>
 
--(void)navigationRightButtonClicked:(YSHYShowImage *)showImage;
+-(void)navigationRightButtonClicked:(ShowImage *)showImage;
 
 @end
 
@@ -25,7 +25,7 @@ typedef void(^SendImagesBlock)(NSArray * array);
 
 #pragma mark - showImage
 
-@interface YSHYShowImage : NSObject
+@interface ShowImage : NSObject
 
 @property (strong, nonatomic) UIImage *image;
 @property (assign, nonatomic) bool stateOfSelect;
@@ -35,10 +35,9 @@ typedef void(^SendImagesBlock)(NSArray * array);
 @end
 
 #pragma mark - ShowBigViewController
-@interface ShowBigViewController : UIViewController<UIScrollViewDelegate,UINavigationControllerDelegate,NavigationRightButtonDelegate>
+@interface YSHYShowBigViewController : UIViewController<UIScrollViewDelegate,UINavigationControllerDelegate,NavigationRightButtonDelegate>
 {
     UIImageView    *_imagvtitle;
-    
     UIButton        *rightbtn;
     UIScrollView    *_scrollerview;
     UIButton        *_btnOK;
