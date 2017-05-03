@@ -323,7 +323,7 @@
 				TargetAttributes = {
 					E5797FAE1CB4E9D5001AC9FA = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = CV6BXNLMXG;
+						DevelopmentTeam = 5RE4F9CJ24;
 					};
 					E5797FC71CB4E9D5001AC9FA = {
 						CreatedOnToolsVersion = 7.2;
@@ -553,10 +553,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5RE4F9CJ24;
 				INFOPLIST_FILE = YSHYAssetsPickerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemo.cn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemo.cna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -566,10 +567,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5RE4F9CJ24;
 				INFOPLIST_FILE = YSHYAssetsPickerDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemo.cn;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YSHY.YSHYAssetsPickerDemo.cna;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

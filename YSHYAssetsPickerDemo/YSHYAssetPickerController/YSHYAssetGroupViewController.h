@@ -13,6 +13,8 @@
 #define kScreenHeight     [[UIScreen mainScreen]bounds].size.height
 #define kPopoverContentSize CGSizeMake(kScreenWidth, kScreenHeight)
 
+typedef void(^YSHYAssetGroupViewControllerBlock)(NSMutableArray *groups);
+
 @interface YSHYAssetGroupViewController : UITableViewController
 @property (nonatomic, assign) NSInteger  isFirstAppear;   // 0 表示是  其他表示不是
 @property (nonatomic, strong) ALAssetsLibrary *assetsLibrary;
@@ -20,4 +22,6 @@
 
 @property (nonatomic, assign) NSInteger maxSelectedNumber;
 @property (nonatomic, strong) NSMutableArray * hasSelectedImages;
+
+@property (nonatomic, strong) YSHYAssetGroupViewControllerBlock block;
 @end

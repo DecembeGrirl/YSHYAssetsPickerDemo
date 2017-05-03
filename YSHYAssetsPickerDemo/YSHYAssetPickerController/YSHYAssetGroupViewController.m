@@ -16,6 +16,11 @@
 {
     if (self = [super initWithStyle:UITableViewStylePlain])
     {
+        [self setupViews];
+        [self setupButtons];
+        [self localize];
+        [self setupGroup];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(dismiss:)];
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_7_0
         self.preferredContentSize=kPopoverContentSize;
 #else
@@ -30,11 +35,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupViews];
-    [self setupButtons];
-    [self localize];
-    [self setupGroup];
-//    
+//    [self setupViews];
+//    [self setupButtons];
+//    [self localize];
+//    [self setupGroup];
+//     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"取消" style:UIBarButtonItemStylePlain target:self action:@selector(dismiss:)];
+//
     self.isFirstAppear = 0;
 }
 
@@ -88,6 +94,8 @@
         }
         else
         {
+            NSLog(@"---------  开始加载数据啦");
+            self.block(self.groups);
             [self ReloadData];
         }
     };

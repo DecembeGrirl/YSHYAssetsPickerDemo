@@ -122,8 +122,10 @@
         [self.assets removeAllObjects];
     
     ALAssetsGroupEnumerationResultsBlock resultsBlock = ^(ALAsset *asset, NSUInteger index, BOOL *stop) {
-        
-        if (asset)
+        //过滤掉GIF 图片
+        id obj = [asset.defaultRepresentation UTI];
+        NSLog(@"%@",obj);
+        if (asset && (![obj hasSuffix:@"gif"] && ![obj hasSuffix:@"GIF"]))
         {
             [self.assets addObject:asset];
         }
@@ -135,8 +137,7 @@
             if (item < 0) item = 0;
             NSIndexPath *lastIndexPath = [NSIndexPath indexPathForItem:item inSection:section];
             [self.collectionView scrollToItemAtIndexPath:lastIndexPath atScrollPosition:UICollectionViewScrollPositionBottom animated:YES];
-        }
-    };
+        }    };
     
     [self.assetsGroup enumerateAssetsUsingBlock:resultsBlock];
     
